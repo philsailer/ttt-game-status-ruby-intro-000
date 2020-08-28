@@ -25,3 +25,7 @@ end
 def full?(board)
   not(board.any?{|position| position==" "})
 end
+
+def draw?(board)
+  full?(board) && not(won?(board))
+end
