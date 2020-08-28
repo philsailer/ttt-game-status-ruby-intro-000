@@ -23,5 +23,5 @@ def won?(board)
 end
 
 def full?(board)
-  puts board.detect{|position| position==" "}
+  puts board.any?{|position| position==" "}
 end
